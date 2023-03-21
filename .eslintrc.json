@@ -8,14 +8,14 @@
   },
   "extends": ["eslint:recommended", "plugin:prettier/recommended", "next", "next/core-web-vitals"],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": 0,
     "no-unused-vars": 0,
     "react/no-unescaped-entities": 0,
     "no-useless-escape": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn"
   },
   "plugins": ["prettier", "simple-import-sort"],
   "overrides": [
@@ -23,7 +23,7 @@
       "files": ["**/*.js", "**/*.ts", "**/*.tsx"],
       "rules": {
         "simple-import-sort/imports": [
-          "error",
+          "warn",
           {
             "groups": [
               ["^react$", "^next", "^[a-z]"],
